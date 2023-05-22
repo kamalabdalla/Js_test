@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Link</title>
+      <style>
+        table {
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+          border: 1px solid black;
+        }
+        button{
+            background-color: rgb(192, 162, 220);
+            color: rgb(248, 244, 239);
+            border: none;
+            border-radius: 8px;
+
+        }
+      </style>
+    </head>
+    <body>
+        <center>
+
+            <form><p></p>
+                <label for="start">Start Range:</label>
+                <input type="text" id="start" value="1"><br><p></p>
+                <label for="end">End Range:</label>
+                <input type="text" id="end" value="1"><br><p></p>
+                <button type="button" onclick="displayTable()">Generate Table</button>
+            </form>
+            <p id="rangeMsg"></p>
+            <table id="linkTable"></table>
+            
+            
+        </center>
+            <script src="app.js"></script>
+        </body>
+    </html>
+    
+ 
